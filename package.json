@@ -1,0 +1,50 @@
+{
+  "name": "dynamic_qr_code",
+  "version": "1.0.0",
+  "description": "Dynamic QR code management tool",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production nodemon app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dynamic-qr-code",
+    "smart-qr-code",
+    "dynamic qr code with MEAN Stack",
+    "dynamic qr code with Node js"
+  ],
+  "author": "Elsner Technology Ptv. Ltd.",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bcrypt": "^5.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.1",
+    "compression": "^1.7.4",
+    "crypto-ts": "^1.0.2",
+    "dotenv": "^10.0.0",
+    "easyqrcodejs-nodejs": "^4.3.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.7.7",
+    "helmet": "^4.6.0",
+    "html-pdf": "^3.0.1",
+    "https": "^1.0.0",
+    "ip": "^1.1.5",
+    "json2csv": "^5.0.6",
+    "json2xls": "^0.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.14",
+    "nodemailer": "^6.7.2",
+    "nodemailer-mandrill-transport": "^1.2.0",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

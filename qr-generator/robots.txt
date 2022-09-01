@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.dynamic-qrcodegenerator.com/sitemap.xml

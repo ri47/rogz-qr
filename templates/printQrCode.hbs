@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    QR-Codegen
+  </title>
+  <meta name="description" content="Daily project status PDF" />
+  <meta name="author" content="SitePoint" />
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<body style="font-family: Arial, Helvetica, sans-serif; margin: 0px">
+  <table cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; padding: 30px">
+    <tr>
+      <td>
+        <table style="width: 100%;
+              border: solid 1px #d7e7f6;
+              border-radius: 6px;
+              width: 100%;
+              padding: 20px 30px;
+              margin-bottom: 15px;">
+          <tr>
+            <td style="color: #ac1f23;
+                  font-size: 30px;
+                  font-weight: 600;
+                  padding-top: 10px;
+                  padding-bottom: 30px;
+                  width: 100%;">
+              <center>
+                QR-Codegen
+              </center>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 100%;">
+              {{#dataUrlArr}}
+              <div style="width: 31%;
+                      display: inline-block;
+                      text-align: center;
+                      vertical-align: top;
+                      margin-bottom: 20px;">
+                <div style="color: #4e5b64;
+                        background-color: #e8f2fb;
+                        border-radius: 2px;
+                        font-size: 22px;
+                        padding: 5px 7px;
+                        display: inline-block;
+                        text-align: center;
+                        margin-block: 20px;">
+                  <img src="{{this}}" style="max-width: 100%; width: auto; margin: 0 auto;" />
+                </div>
+              </div>
+              {{/dataUrlArr}}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
