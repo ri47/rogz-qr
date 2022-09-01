@@ -10,6 +10,7 @@ require('dotenv').config(); // loads CONFIG variables from the .env top-level fi
 const app = express();
 const config = require('./config');
 const { DB_URL } = process.env;
+const port = process.env.PORT
 
 mongoose.connect(DB_URL, { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }, function (err, data) {
     if (err) {
@@ -86,13 +87,13 @@ function startserver() {
         });
     } else {
         // serve the app on PORT variable
-        app.listen(config.NODE_PORT, function (err) {
+        app.listen(port, function (err) {
             if (err) {
                 console.log();
                 console.log(config.chalk.red('App is listening error '), err);
             } else {
                 console.log();
-                console.log(config.chalk.green(`Server listening on the port::${config.NODE_PORT}`));
+                console.log(config.chalk.green(`Server listening on the port::${port}`));
             }
         });
     }
