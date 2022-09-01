@@ -21,7 +21,7 @@ mongoose.connect(DB_URL, { useCreateIndex: true, useNewUrlParser: true, useUnifi
     } else if (data) {
         console.log();
         console.log(config.chalk.yellow('Database'), config.chalk.green('connected successfully...'));
-        console.log('DB URL', ${DB_URL})
+        console.log('DB URL', `${DB_URL}`)
         startserver();
         return;
     }
