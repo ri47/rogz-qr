@@ -82,7 +82,7 @@ function startserver() {
                 console.log(config.chalk.red('App is listening error '), err);
             } else {
                 console.log();
-                console.log(config.chalk.green(`Server listening on the port::${config.NODE_PORT}`));
+                console.log(config.chalk.green(`Server listening on the port::${port}`));
             }
         });
     } else {

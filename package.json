@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node app.js",
     "dev": "cross-env NODE_ENV=development node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "r": "node app.js"
   },
   "keywords": [
     "dynamic-qr-code",
